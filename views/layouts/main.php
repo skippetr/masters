@@ -78,8 +78,8 @@ AppAsset::register($this);
                 <?php
                     if (Yii::$app->user->isGuest) {
                         //TODO: fix links
-                        echo "<li><a href='http://localhost/yii-test/web/user/login'>Авторизация</a></li>";
-                        echo "<li><a href='http://localhost/yii-test/web/user/register'>Регистрация</a></li>";
+                        echo "<li><a href=/user/login>Авторизация</a></li>";
+                        echo "<li><a href=".Yii::getAlias('@web')."/user/register>Регистрация</a></li>";
                     } else {
                         echo "<li><a href='http://localhost/yii-test/web/site/logout/' data-method='post'>Выйти</a></li>";
                     }

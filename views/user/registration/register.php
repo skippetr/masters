@@ -30,9 +30,9 @@ $this->registerJsFile('http://localhost/yii-test/web/assets/script.js', ['depend
 
                 <?= $form->field($model, 'email') ?>
 
-                <? //$form->field($model, 'field') ?>
+                <?php //$form->field($model, 'field') ?>
 
-                <? echo $form->field($model, 'type')->hiddenInput(['value'=> '0'])->label(false); //echo Html::hiddenInput('field', "321"); ?>
+                <?= $form->field($model, 'type')->hiddenInput(['value'=> '0'])->label(false) //echo Html::hiddenInput('field', "321"); ?>
 
                 <?= $form->field($model, 'password')->passwordInput() ?>
 
@@ -60,9 +60,9 @@ $this->registerJsFile('http://localhost/yii-test/web/assets/script.js', ['depend
 
                 <?= $form->field($model, 'email') ?>
                 
-                <? echo $form->field($model, 'type')->hiddenInput(['value'=> '1'])->label(false); ?>
+                <?= $form->field($model, 'type')->hiddenInput(['value'=> '1'])->label(false) ?>
 
-                <? echo $form->field($model, 'rate')->hiddenInput(['value'=> '1'])->label(false); ?>
+                <?= $form->field($model, 'rate')->hiddenInput(['value'=> '1'])->label(false) ?>
 
                 <?= $form->field($model, 'password')->passwordInput() ?>
 
